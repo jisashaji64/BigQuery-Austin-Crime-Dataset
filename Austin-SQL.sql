@@ -74,7 +74,7 @@ ON austin.year = chicago.year
 \*
 -----------------------------------------------------------------------------------------------------
 8.[JOIN] Returns the latitude and longitude of the Crime Scene from Chicago crime database and Austin Crime database
-   where the year of crime is same
+   where the year of crime are same
 -----------------------------------------------------------------------------------------------------
 */
 SELECT austin.latitude,austin.longitude,chicago.x_coordinate,chicago.y_coordinate
@@ -90,8 +90,9 @@ FROM `bigquery-public-data.austin_crime.crime`
 ORDER BY clearance_date DESC
 \*
 -----------------------------------------------------------------------------------------------------
-10. Retrive attributes from table where primary_type starts and ends with 'R' and 'e'
+10. Retrive rows from table where primary_type starts and ends with 'R' and 'e'
 -----------------------------------------------------------------------------------------------------
+[LIKE]
 */
 
 SELECT * FROM
